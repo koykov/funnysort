@@ -5,6 +5,11 @@ import (
 	"slices"
 )
 
+// MercifulStalin sorts array applies four steps:
+// * apply Stalin sort forward
+// * apply Stalin sort backward
+// * merge results
+// * recursively apply MercifulStalin to the rest and merge
 func MercifulStalin[T cmp.Ordered](buf *MercifulStalinBuffer[T], a []T) []T {
 	n := len(a)
 	if n <= 1 {
@@ -42,11 +47,13 @@ func MercifulStalin[T cmp.Ordered](buf *MercifulStalinBuffer[T], a []T) []T {
 		slices.Reverse(bw)
 	}
 
+	// merge
 	r = mergeMFS(r, fw, bw)
 	if len(rbw) == 0 {
 		return r
 	}
 
+	// apply recursion to the rest
 	rem := MercifulStalin[T](buf.next(), rbw)
 	r1 = mergeMFS(r1, r, rem)
 	return append(a[:0], r1...)
