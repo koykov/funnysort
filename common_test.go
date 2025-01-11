@@ -6,6 +6,7 @@ type stage struct {
 	mercifulStalin []int
 	liberal        []int
 	liberalGroups  []int
+	capitalist     []int
 }
 
 var stages = []stage{
@@ -15,6 +16,7 @@ var stages = []stage{
 		mercifulStalin: []int{1, 2, 2, 3, 4, 6, 10, 15, 20, 30},
 		liberal:        []int{1, 2, 10, 3, 2, 4, 15, 6, 30, 20},
 		liberalGroups:  []int{1, 3, 15, 2, 10, 2, 4, 6, 30, 20},
+		capitalist:     []int{30, 20, 15, 10, 6, 4, 3, 2, 2, 1},
 	},
 	{
 		source:         []int{78, 33, 100, 61, 65, 72, 11, 66, 89, 3},
@@ -22,6 +24,7 @@ var stages = []stage{
 		mercifulStalin: []int{3, 11, 33, 61, 65, 66, 72, 78, 89, 100},
 		liberal:        []int{78, 33, 100, 61, 65, 72, 11, 66, 89, 3},
 		liberalGroups:  []int{78, 100, 72, 66, 33, 61, 65, 11, 89, 3},
+		capitalist:     []int{100, 89, 78, 72, 66, 65, 61, 33, 11, 3},
 	},
 	{
 		source:         []int{2, 2, 3, 1, 10},
@@ -29,6 +32,7 @@ var stages = []stage{
 		mercifulStalin: []int{1, 2, 2, 3, 10},
 		liberal:        []int{2, 2, 3, 1, 10},
 		liberalGroups:  []int{2, 2, 10, 3, 1},
+		capitalist:     []int{10, 3, 2, 2, 1},
 	},
 	{
 		source:         []int{1, 2, 10, 3, 2, 4, 15, 6, 30, 20},
@@ -36,6 +40,7 @@ var stages = []stage{
 		mercifulStalin: []int{1, 2, 2, 3, 4, 6, 10, 15, 20, 30},
 		liberal:        []int{1, 2, 10, 3, 2, 4, 15, 6, 30, 20},
 		liberalGroups:  []int{1, 3, 15, 2, 10, 2, 4, 6, 30, 20},
+		capitalist:     []int{30, 20, 15, 10, 6, 4, 3, 2, 2, 1},
 	},
 	{
 		source:         []int{1, 2, 2, 3, 2, 5},
@@ -43,6 +48,7 @@ var stages = []stage{
 		mercifulStalin: []int{1, 2, 2, 2, 3, 5},
 		liberal:        []int{1, 2, 2, 3, 2, 5},
 		liberalGroups:  []int{1, 3, 5, 2, 2, 2},
+		capitalist:     []int{5, 3, 2, 2, 2, 1},
 	},
 }
 
