@@ -4,6 +4,7 @@ import (
 	"math"
 )
 
+// CapitalistHierarchy sorts array according principe - middle class shaves part of value between top and bottom class.
 func CapitalistHierarchy[T OrderedNoString](a []T) []T {
 	n := len(a)
 	if n == 0 {
