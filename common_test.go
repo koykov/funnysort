@@ -14,6 +14,7 @@ type stage struct {
 	communist        []int
 	communistMil     []int
 	socialist        []int
+	socialistLate    []int
 }
 
 var stages = []stage{
@@ -31,6 +32,7 @@ var stages = []stage{
 		communist:        []int{9, 9, 9, 9, 9, 9, 9, 9, 9, 9},
 		communistMil:     []int{0, 0, 0, 0, 0, 0, 0, 0, 93, 0},
 		socialist:        []int{1, 2, 3, 4, 5, 7, 11, 15, 20, 25},
+		socialistLate:    []int{1, 2, 2, 3, 10, 4, 15, 6, 30, 20},
 	},
 	{
 		source:           []int{78, 33, 100, 61, 65, 72, 11, 66, 89, 3},
@@ -46,6 +48,7 @@ var stages = []stage{
 		communist:        []int{57, 57, 57, 57, 57, 57, 57, 57, 57, 57},
 		communistMil:     []int{0, 0, 578, 0, 0, 0, 0, 0, 0, 0},
 		socialist:        []int{16, 16, 30, 49, 65, 69, 73, 79, 86, 95},
+		socialistLate:    []int{33, 61, 65, 78, 100, 72, 11, 66, 89, 3},
 	},
 	{
 		source:           []int{2, 2, 3, 1, 10},
@@ -61,6 +64,7 @@ var stages = []stage{
 		communist:        []int{3, 3, 3, 3, 3},
 		communistMil:     []int{0, 0, 0, 0, 18},
 		socialist:        []int{2, 2, 3, 4, 7},
+		socialistLate:    []int{2, 2, 3, 1, 10},
 	},
 	{
 		source:           []int{1, 2, 10, 3, 2, 4, 15, 6, 30, 20},
@@ -76,6 +80,7 @@ var stages = []stage{
 		communist:        []int{9, 9, 9, 9, 9, 9, 9, 9, 9, 9},
 		communistMil:     []int{0, 0, 0, 0, 0, 0, 0, 0, 93, 0},
 		socialist:        []int{1, 2, 3, 4, 5, 7, 11, 15, 20, 25},
+		socialistLate:    []int{1, 2, 2, 3, 10, 4, 15, 6, 30, 20},
 	},
 	{
 		source:           []int{1, 2, 2, 3, 2, 5},
@@ -91,6 +96,7 @@ var stages = []stage{
 		communist:        []int{2, 2, 2, 2, 2, 2},
 		communistMil:     []int{0, 0, 0, 0, 0, 15},
 		socialist:        []int{1, 2, 2, 3, 3, 4},
+		socialistLate:    []int{1, 2, 2, 3, 2, 5},
 	},
 }
 
