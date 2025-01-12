@@ -10,6 +10,7 @@ type stage struct {
 	capitalistRedist []int
 	capitalistHrchy  []int
 	corporate        []int
+	lenin            []int
 }
 
 var stages = []stage{
@@ -23,6 +24,7 @@ var stages = []stage{
 		capitalistRedist: []int{40, 17, 12, 8, 5, 3, 2, 2, 1, 0},
 		capitalistHrchy:  []int{45, 14, 9, 6, 4, 4, 3, 3, 3, 2},
 		corporate:        []int{73, 20, 0, 0, 0, 0, 0, 0, 0, 0},
+		lenin:            []int{4, 6, 10, 15, 20, 30},
 	},
 	{
 		source:           []int{78, 33, 100, 61, 65, 72, 11, 66, 89, 3},
@@ -34,6 +36,7 @@ var stages = []stage{
 		capitalistRedist: []int{144, 83, 75, 69, 65, 62, 46, 21, 6, 1},
 		capitalistHrchy:  []int{115, 83, 72, 66, 66, 65, 61, 34, 12, 4},
 		corporate:        []int{489, 89, 0, 0, 0, 0, 0, 0, 0, 0},
+		lenin:            []int{11, 33, 61, 65, 66, 72, 78, 89, 100},
 	},
 	{
 		source:           []int{2, 2, 3, 1, 10},
@@ -45,6 +48,7 @@ var stages = []stage{
 		capitalistRedist: []int{11, 2, 2, 1, 0},
 		capitalistHrchy:  []int{20, 3, 2, -3, -4},
 		corporate:        []int{15, 3, 0, 0, 0},
+		lenin:            []int{10},
 	},
 	{
 		source:           []int{1, 2, 10, 3, 2, 4, 15, 6, 30, 20},
@@ -56,6 +60,7 @@ var stages = []stage{
 		capitalistRedist: []int{40, 17, 12, 8, 5, 3, 2, 2, 1, 0},
 		capitalistHrchy:  []int{45, 14, 9, 6, 4, 4, 3, 3, 3, 2},
 		corporate:        []int{73, 20, 0, 0, 0, 0, 0, 0, 0, 0},
+		lenin:            []int{4, 6, 10, 15, 20, 30},
 	},
 	{
 		source:           []int{1, 2, 2, 3, 2, 5},
@@ -67,6 +72,7 @@ var stages = []stage{
 		capitalistRedist: []int{6, 2, 2, 2, 1, 0},
 		capitalistHrchy:  []int{15, 3, 2, 2, -3, -4},
 		corporate:        []int{12, 3, 0, 0, 0, 0},
+		lenin:            []int{5},
 	},
 }
 
