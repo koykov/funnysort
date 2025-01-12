@@ -7,7 +7,6 @@ func TestCapitalistHierarchy(t *testing.T) {
 		t.Run("", func(t *testing.T) {
 			r := CapitalistHierarchy(cpy(stages[i].source))
 			if !assertEqual(r, stages[i].capitalistHrchy) {
-				t.Log(r)
 				t.Fail()
 			}
 		})

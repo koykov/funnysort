@@ -7,7 +7,6 @@ func TestLateSocialist(t *testing.T) {
 		t.Run("", func(t *testing.T) {
 			r := LateSocialist(cpy(stages[i].source))
 			if !assertEqual(r, stages[i].socialistLate) {
-				t.Log(r)
 				t.Fail()
 			}
 		})

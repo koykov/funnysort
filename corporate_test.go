@@ -7,7 +7,6 @@ func TestCorporate(t *testing.T) {
 		t.Run("", func(t *testing.T) {
 			r := Corporate(cpy(stages[i].source))
 			if !assertEqual(r, stages[i].corporate) {
-				t.Log(r)
 				t.Fail()
 			}
 		})

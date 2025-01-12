@@ -7,7 +7,6 @@ func TestCommunist(t *testing.T) {
 		t.Run("", func(t *testing.T) {
 			r := Communist(cpy(stages[i].source))
 			if !assertEqual(r, stages[i].communist) {
-				t.Log(r)
 				t.Fail()
 			}
 		})

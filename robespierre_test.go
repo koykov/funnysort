@@ -8,7 +8,6 @@ func TestRobespierre(t *testing.T) {
 			t.Run("", func(t *testing.T) {
 				r := Robespierre(cpy(stages[i].source), RobespierreTerrorPolicyExample_HasNoSiblings[int])
 				if !assertEqual(r, stages[i].robespierreNoSl) {
-					t.Log(r)
 					t.Fail()
 				}
 			})
@@ -19,7 +18,6 @@ func TestRobespierre(t *testing.T) {
 			t.Run("", func(t *testing.T) {
 				r := Robespierre(cpy(stages[i].source), RobespierreTerrorPolicyExample_HasSiblings[int])
 				if !assertEqual(r, stages[i].robespierreSl) {
-					t.Log(r)
 					t.Fail()
 				}
 			})

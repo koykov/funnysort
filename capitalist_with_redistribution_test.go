@@ -7,7 +7,6 @@ func TestCapitalistWithRedistribution(t *testing.T) {
 		t.Run("", func(t *testing.T) {
 			r := CapitalistWithRedistribution(cpy(stages[i].source))
 			if !assertEqual(r, stages[i].capitalistRedist) {
-				t.Log(r)
 				t.Fail()
 			}
 		})

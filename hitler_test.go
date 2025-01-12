@@ -7,7 +7,6 @@ func TestHitler(t *testing.T) {
 		t.Run("", func(t *testing.T) {
 			r := Hitler(cpy(stages[i].source), func(i int) bool { return i%4 == 0 || i%7 == 0 })
 			if !assertEqual(r, stages[i].hitler) {
-				t.Log(r)
 				t.Fail()
 			}
 		})

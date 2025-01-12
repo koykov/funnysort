@@ -7,7 +7,6 @@ func TestLenin(t *testing.T) {
 		t.Run("", func(t *testing.T) {
 			r := Lenin(cpy(stages[i].source), 3)
 			if !assertEqual(r, stages[i].lenin) {
-				t.Log(r)
 				t.Fail()
 			}
 		})
