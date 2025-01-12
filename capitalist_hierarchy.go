@@ -1,8 +1,6 @@
 package funnysort
 
-import (
-	"math"
-)
+import "math"
 
 // CapitalistHierarchy sorts array according principe - middle class shares part of their values between top and bottom class.
 func CapitalistHierarchy[T OrderedNoString](a []T) []T {
