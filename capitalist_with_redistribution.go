@@ -5,8 +5,12 @@ import (
 )
 
 func CapitalistWithRedistribution[T OrderedNoString](a []T) []T {
+	n := len(a)
+	if n == 0 {
+		return a
+	}
 	a = Capitalist[T](a)
-	for i := 0; i < len(a)-1; i++ {
+	for i := 0; i < n-1; i++ {
 		switch x := any(a[i]).(type) { // keep in sync with OrderedNoString type
 		case int:
 			y := any(a[i+1]).(int)

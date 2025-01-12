@@ -8,6 +8,7 @@ type stage struct {
 	liberalGroups    []int
 	capitalist       []int
 	capitalistRedist []int
+	capitalistHrchy  []int
 }
 
 var stages = []stage{
@@ -19,6 +20,7 @@ var stages = []stage{
 		liberalGroups:    []int{1, 3, 15, 2, 10, 2, 4, 6, 30, 20},
 		capitalist:       []int{30, 20, 15, 10, 6, 4, 3, 2, 2, 1},
 		capitalistRedist: []int{40, 17, 12, 8, 5, 3, 2, 2, 1, 0},
+		capitalistHrchy:  []int{45, 14, 9, 6, 4, 4, 3, 3, 3, 2},
 	},
 	{
 		source:           []int{78, 33, 100, 61, 65, 72, 11, 66, 89, 3},
@@ -28,6 +30,7 @@ var stages = []stage{
 		liberalGroups:    []int{78, 100, 72, 66, 33, 61, 65, 11, 89, 3},
 		capitalist:       []int{100, 89, 78, 72, 66, 65, 61, 33, 11, 3},
 		capitalistRedist: []int{144, 83, 75, 69, 65, 62, 46, 21, 6, 1},
+		capitalistHrchy:  []int{115, 83, 72, 66, 66, 65, 61, 34, 12, 4},
 	},
 	{
 		source:           []int{2, 2, 3, 1, 10},
@@ -37,6 +40,7 @@ var stages = []stage{
 		liberalGroups:    []int{2, 2, 10, 3, 1},
 		capitalist:       []int{10, 3, 2, 2, 1},
 		capitalistRedist: []int{11, 2, 2, 1, 0},
+		capitalistHrchy:  []int{20, 3, 2, -3, -4},
 	},
 	{
 		source:           []int{1, 2, 10, 3, 2, 4, 15, 6, 30, 20},
@@ -46,6 +50,7 @@ var stages = []stage{
 		liberalGroups:    []int{1, 3, 15, 2, 10, 2, 4, 6, 30, 20},
 		capitalist:       []int{30, 20, 15, 10, 6, 4, 3, 2, 2, 1},
 		capitalistRedist: []int{40, 17, 12, 8, 5, 3, 2, 2, 1, 0},
+		capitalistHrchy:  []int{45, 14, 9, 6, 4, 4, 3, 3, 3, 2},
 	},
 	{
 		source:           []int{1, 2, 2, 3, 2, 5},
@@ -55,6 +60,7 @@ var stages = []stage{
 		liberalGroups:    []int{1, 3, 5, 2, 2, 2},
 		capitalist:       []int{5, 3, 2, 2, 2, 1},
 		capitalistRedist: []int{6, 2, 2, 2, 1, 0},
+		capitalistHrchy:  []int{15, 3, 2, 2, -3, -4},
 	},
 }
 
