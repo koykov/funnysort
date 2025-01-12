@@ -4,7 +4,7 @@ package funnysort
 // Original order keeps inside the groups.
 func LiberalWithGroups[T any](buf *LiberalBuffer[T], a []T, keyFunc func(T) int) []T {
 	n := len(a)
-	if n == 0 {
+	if n < 2 {
 		return a
 	}
 	_ = a[n-1]
