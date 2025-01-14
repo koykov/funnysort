@@ -5,6 +5,8 @@ import (
 	"slices"
 )
 
+// Robespierre sort array according principe - all items denied by terrorPolicyFunc removes from thr sorted array.
+// The greatest element falls victim to terror afterward.
 func Robespierre[T cmp.Ordered](a []T, terrorPolicyFunc func([]T) []T) []T {
 	n := len(a)
 	if n < 2 {
