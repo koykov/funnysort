@@ -5,6 +5,8 @@ import (
 	"sort"
 )
 
+// Hitler sorts array according principe - all items groups by checkSkullFormFunc and the values of isolated items
+// redistributes between survived items.
 func Hitler[T OrderedNoString](a []T, checkSkullFormFunc func(T) bool) []T {
 	n := len(a)
 	if n < 2 {
