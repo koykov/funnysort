@@ -14,6 +14,9 @@ func Robespierre[T cmp.Ordered](a []T, terrorPolicyFunc func([]T) []T) []T {
 	}
 	slices.Sort(a)
 	a = terrorPolicyFunc(a)
+	if len(a) > 0 {
+		a = a[:len(a)-1]
+	}
 	return a
 }
 
