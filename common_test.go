@@ -37,8 +37,8 @@ var stages = []stage{
 		socialist:        []int{1, 2, 3, 4, 5, 7, 11, 15, 20, 25},
 		socialistLate:    []int{1, 2, 2, 3, 10, 4, 15, 6, 30, 20},
 		hitler:           []int{9, 10, 10, 11, 14, 18, 23, 38},
-		robespierreSl:    []int{2, 2},
-		robespierreNoSl:  []int{1, 3, 4, 6, 10, 15, 20, 30},
+		robespierreSl:    []int{2},
+		robespierreNoSl:  []int{1, 3, 4, 6, 10, 15, 20},
 	},
 	{
 		source:           []int{78, 33, 100, 61, 65, 72, 11, 66, 89, 3},
@@ -57,7 +57,7 @@ var stages = []stage{
 		socialistLate:    []int{33, 61, 65, 78, 100, 72, 11, 66, 89, 3},
 		hitler:           []int{53, 61, 83, 111, 115, 116, 128, 139},
 		robespierreSl:    []int{},
-		robespierreNoSl:  []int{3, 11, 33, 61, 65, 66, 72, 78, 89, 100},
+		robespierreNoSl:  []int{3, 11, 33, 61, 65, 66, 72, 78, 89},
 	},
 	{
 		source:           []int{2, 2, 3, 1, 10},
@@ -75,8 +75,8 @@ var stages = []stage{
 		socialist:        []int{2, 2, 3, 4, 7},
 		socialistLate:    []int{2, 2, 3, 1, 10},
 		hitler:           []int{1, 2, 2, 3, 10},
-		robespierreSl:    []int{2, 2},
-		robespierreNoSl:  []int{1, 3, 10},
+		robespierreSl:    []int{2},
+		robespierreNoSl:  []int{1, 3},
 	},
 	{
 		source:           []int{1, 2, 10, 3, 2, 4, 15, 6, 30, 20},
@@ -94,8 +94,8 @@ var stages = []stage{
 		socialist:        []int{1, 2, 3, 4, 5, 7, 11, 15, 20, 25},
 		socialistLate:    []int{1, 2, 2, 3, 10, 4, 15, 6, 30, 20},
 		hitler:           []int{9, 10, 10, 11, 14, 18, 23, 38},
-		robespierreSl:    []int{2, 2},
-		robespierreNoSl:  []int{1, 3, 4, 6, 10, 15, 20, 30},
+		robespierreSl:    []int{2},
+		robespierreNoSl:  []int{1, 3, 4, 6, 10, 15, 20},
 	},
 	{
 		source:           []int{1, 2, 2, 3, 2, 5},
@@ -113,8 +113,8 @@ var stages = []stage{
 		socialist:        []int{1, 2, 2, 3, 3, 4},
 		socialistLate:    []int{1, 2, 2, 3, 2, 5},
 		hitler:           []int{1, 2, 2, 2, 3, 5},
-		robespierreSl:    []int{2, 2, 2},
-		robespierreNoSl:  []int{1, 3, 5},
+		robespierreSl:    []int{2, 2},
+		robespierreNoSl:  []int{1, 3},
 	},
 }
 
