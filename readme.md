@@ -19,5 +19,6 @@ Collection of funny sorting algorithms:
 * [Hitler](hitler.go)
 * [Robespierre](robespierre.go)
 * [KPI](kpi.go)
+* [Woke](woke.go)
 
 Just in case - don't use it in production.
