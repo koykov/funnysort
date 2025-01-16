@@ -19,6 +19,7 @@ type stage struct {
 	robespierreSl    []int
 	robespierreNoSl  []int
 	kpi              []int
+	woke             []int
 }
 
 var stages = []stage{
@@ -41,6 +42,7 @@ var stages = []stage{
 		robespierreSl:    []int{2},
 		robespierreNoSl:  []int{1, 3, 4, 6, 10, 15, 20},
 		kpi:              []int{1, 2, 2, 3, 4, 6, 10, 15, 20, 30},
+		woke:             []int{48, 15, 10, 6, 5, 4, 3, 1, 1, 0},
 	},
 	{
 		source:           []int{78, 33, 100, 61, 65, 72, 11, 66, 89, 3},
@@ -61,6 +63,7 @@ var stages = []stage{
 		robespierreSl:    []int{},
 		robespierreNoSl:  []int{3, 11, 33, 61, 65, 66, 72, 78, 89},
 		kpi:              []int{3, 11, 33, 61, 65, 66, 72, 78, 89, 100},
+		woke:             []int{118, 84, 73, 67, 66, 65, 61, 32, 10, 2},
 	},
 	{
 		source:           []int{2, 2, 3, 1, 10},
@@ -81,6 +84,7 @@ var stages = []stage{
 		robespierreSl:    []int{2},
 		robespierreNoSl:  []int{1, 3},
 		kpi:              []int{1, 2, 2, 3, 10},
+		woke:             []int{22, 1, 0, -2, -3},
 	},
 	{
 		source:           []int{1, 2, 10, 3, 2, 4, 15, 6, 30, 20},
@@ -101,6 +105,7 @@ var stages = []stage{
 		robespierreSl:    []int{2},
 		robespierreNoSl:  []int{1, 3, 4, 6, 10, 15, 20},
 		kpi:              []int{1, 2, 2, 3, 4, 6, 10, 15, 20, 30},
+		woke:             []int{48, 15, 10, 6, 5, 4, 3, 1, 1, 0},
 	},
 	{
 		source:           []int{1, 2, 2, 3, 2, 5},
@@ -121,6 +126,7 @@ var stages = []stage{
 		robespierreSl:    []int{2, 2},
 		robespierreNoSl:  []int{1, 3},
 		kpi:              []int{1, 2, 2, 2, 3, 5},
+		woke:             []int{17, 2, 1, 0, -2, -3},
 	},
 }
 
