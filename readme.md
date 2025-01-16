@@ -18,5 +18,6 @@ Collection of funny sorting algorithms:
 * [Yeltsin](yeltsin.go)
 * [Hitler](hitler.go)
 * [Robespierre](robespierre.go)
+* [KPI](kpi.go)
 
 Just in case - don't use it in production.
