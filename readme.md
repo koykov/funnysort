@@ -20,5 +20,6 @@ Collection of funny sorting algorithms:
 * [Robespierre](robespierre.go)
 * [KPI](kpi.go)
 * [Woke](woke.go)
+* [Hamlet](hamlet.go)
 
 Just in case - don't use it in production.
