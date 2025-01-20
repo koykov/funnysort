@@ -8,9 +8,18 @@ import (
 
 // Hamlet sort array only if decided to do that.
 func Hamlet[T cmp.Ordered](a []T) []T {
-	toBeOrNotToBe := rand.Intn(2) == 1
-	if toBeOrNotToBe {
+	const (
+		notToBe = iota
+		toBe
+	)
+	decision := rand.Intn(2)
+	switch decision {
+	case toBe:
 		slices.Sort(a)
+	case notToBe:
+		fallthrough
+	default:
+		return a
 	}
 	return a
 }
